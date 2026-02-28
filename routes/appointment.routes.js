@@ -5,8 +5,21 @@ import verifyDoctor from "../middleware/verifyDoctor.js";
 import verifyReceptionist from "../middleware/verifyReceptionist.js";
 import { validate } from "../middleware/validate.js";
 import { appointmentLimiter } from "../config/rateLimiter.js";
-import { bookAppointmentSchema, updateAppointmentStatusSchema, addDoctorNotesSchema } from "../validation/appointment.validation.js";
-import { bookAppointment, updateAppointmentStatus, addDoctorNotes, getDoctorAppointments, getPatientAppointments, getAppointmentById, getAllAppointments, getAvailableDoctors } from "../controllers/appointment.controller.js";
+import {
+  bookAppointmentSchema,
+  updateAppointmentStatusSchema,
+  addDoctorNotesSchema,
+} from "../validation/appointment.validation.js";
+import {
+  bookAppointment,
+  updateAppointmentStatus,
+  addDoctorNotes,
+  getDoctorAppointments,
+  getPatientAppointments,
+  getAppointmentById,
+  getAllAppointments,
+  getAvailableDoctors,
+} from "../controllers/appointment.controller.js";
 
 const router = express.Router();
 
